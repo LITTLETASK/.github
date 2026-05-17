@@ -1,0 +1,8 @@
+# GitHub Actions가 자동 생성하는 SVG — 로컬에서 직접 수정/추적 불필요
+profile/*.svg
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
