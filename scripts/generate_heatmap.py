@@ -18,6 +18,8 @@ def gh_get(url, params=None):
             print("[rate-limit] " + str(wait) + "s 대기...")
             time.sleep(wait)
             continue
+        if r.status_code == 409:
+            return []
         r.raise_for_status()
         return r.json()
 
